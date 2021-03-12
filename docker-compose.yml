@@ -9,5 +9,7 @@ services:
       - ./data:/tmp/hls
   auth:
     build: ./auth
+    ports: 
+      - "8080:8080"
     container_name: auth_server
     
