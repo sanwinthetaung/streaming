@@ -5,4 +5,9 @@ services:
     ports: 
       - "1935:1935"
     container_name: rtmp_server
+    volumes: 
+      - ./data:/tmp/hls
+  auth:
+    build: ./auth
+    container_name: auth_server
     
