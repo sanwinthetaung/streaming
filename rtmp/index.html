@@ -14,6 +14,9 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@alpha"></script> -->
     <script>
       var video = document.getElementById("video");
+      var host = $(hostname -f);
+      console.log(host);
+
       var videoSrc = "http://13.228.25.101:8080/hls/sanwin.m3u8";
       if (Hls.isSupported()) {
         var hls = new Hls();
